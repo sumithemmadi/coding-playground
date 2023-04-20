@@ -23,7 +23,7 @@ const NavBar = () => {
 
     useEffect(() => {
         if (loading) return;
-        if (!user) history("/")
+        if (!user) history("/coding-playground")
     }, [user, loading, history]);
     return (
 

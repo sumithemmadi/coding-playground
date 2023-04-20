@@ -7,9 +7,12 @@ import TypescriptLogo from '../icons/Typescript_logo_2020.svg'
 import ReactLogo from '../icons/react.webp'
 import PythonLogo from "../icons/python.webp"
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
 
 export default function PlaygroundPage() {
+    const navigate = useNavigate();
     const [open, setOpen] = React.useState(false);
+    const gotoPlayground = (goto, id) => navigate(`/playground/${goto}/${id}`);
     const [selectActive, setSelectActive] = React.useState({
         goto: "website",
         name: "HTML/CSS",
@@ -48,10 +51,12 @@ export default function PlaygroundPage() {
 
         axios.post('http://localhost:5000/api/post', JSON.stringify(body), customConfig)
             .then(function (response) {
-                console.log(response.data);
+                console.log(response.data.id + "/" + response.data.goto);
+                gotoPlayground(response.data.goto, response.data.id)
+
             })
             .catch(function (error) {
-                console.log(error);
+                alert(error);
             });
     }
 

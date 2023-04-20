@@ -563,8 +563,8 @@ export default function HcjPlayground() {
   return (
     <div>
       <NavBar />
-      <div class="grid place-items-center px-6 py-24 sm:py-32 lg:px-8" style={{ "height": "100vh" }}>
-        <Playground style={{ width: "90%", height: 500 }} preset='html' />
+      <div className="grid place-items-center px-6 py-24 sm:py-32 lg:px-8" style={{ "height": "100vh" }}>
+        <Playground style={{ width: "90%", height: 500 }} preset='html' code='hello' />
       </div>
     </div>
   )

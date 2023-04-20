@@ -1,7 +1,6 @@
 import "../App.css";
 
 import NavBar from "../components/NavBar";
-import BgImage from "../images/test.jpg"
 import EditPencil from "../icons/pencil-ui-2-svgrepo-com.svg"
 
 import React, { useEffect, useState } from "react";
@@ -11,13 +10,50 @@ import { auth } from "../firebase";
 import { Link } from "react-router-dom";
 import axios from "axios"
 
+import HtmlLogo from "../icons/HTML5_Logo.svg"
+import NodejsImage from "../icons/nodejs-new-pantone-black.svg"
+import TypescriptLogo from '../icons/Typescript_logo_2020.svg'
+import ReactLogo from '../icons/React-icon.svg'
+import PythonLogo from "../icons/Python-logo-notext.svg"
+
 
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);
     const history = useNavigate();
     const [playgrounds, setPlaygrounds] = useState([]);
-    // const data = ["Dog", "Bird", "Cat"];
 
+    const plang = {
+        website: {
+            goto: "website",
+            name: "HTML/CSS",
+            desc: "Vanilla HTML/CSS/JS playground",
+            image: HtmlLogo
+        },
+        nodejs: {
+            goto: "nodejs",
+            name: "Node.js",
+            desc: "Nodejs playground",
+            image: NodejsImage
+        },
+        typescript: {
+            goto: "typescript",
+            name: "Typescript",
+            desc: "Typescript playground",
+            image: TypescriptLogo
+        },
+        react: {
+            goto: "react",
+            name: "React JS",
+            desc: "React.js  playground",
+            image: ReactLogo
+        },
+        python: {
+            goto: "python",
+            name: "Python",
+            desc: "Python playground",
+            image: PythonLogo
+        },
+    }
     useEffect(() => {
         if (loading) return;
         if (!user) history("/coding-playground")
@@ -46,8 +82,8 @@ const Dashboard = () => {
                                 </div>
                             </Link>
                             {playgrounds?.map((pg, i) => (
-                                <div className="blogs" key={i}>
-                                    <img src={BgImage} className="blog-bg" alt="BlogPhoto" />
+                                <div className="blogs" key={i} onClick={() => history(`/playground/${pg.goto}/${pg.id}`)}>
+                                    <img src={plang[pg.goto].image} className="blog-bg border-2 border-neutral-400 p-6" alt="BlogPhoto" />
                                     <div className="blog-info">
                                         <h1>{pg.playground_title}</h1>
                                         <p>{pg.description}</p>

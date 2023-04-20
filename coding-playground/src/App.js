@@ -19,11 +19,11 @@ export default function App() {
         <Route exact path="/coding-playground" Component={Home} />
         <Route exact path="/dashboard" Component={Dashboard} />
         <Route exact path="/playground" Component={PlaygroundPage} />
-        <Route exact path="/playground/website" Component={Hcj} />
-        <Route exact path="/playground/nodejs" Component={NodejsPlayground} />
-        <Route exact path="/playground/typescript" Component={TypescriptPlayground} />
-        <Route exact path="/playground/react" Component={ReactPlayground} />
-        <Route exact path="/playground/python" Component={PythonPlayground} />
+        <Route exact path="/playground/website/:id" Component={Hcj} />
+        <Route exact path="/playground/nodejs/:id" Component={NodejsPlayground} />
+        <Route exact path="/playground/typescript/:id" Component={TypescriptPlayground} />
+        <Route exact path="/playground/react/:id" Component={ReactPlayground} />
+        <Route exact path="/playground/python/:id" Component={PythonPlayground} />
         <Route exact path="*" Component={NoPage} />
       </Routes>
     </BrowserRouter>

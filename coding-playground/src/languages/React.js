@@ -5,7 +5,7 @@ export default function ReactPlayground() {
     return (
         <div>
             <NavBar />
-            <div class="grid place-items-center px-6 py-24 sm:py-32 lg:px-8" style={{ "height": "100vh" }}>
+            <div className="grid place-items-center px-6 py-24 sm:py-32 lg:px-8" style={{ "height": "100vh" }}>
                 <Playground style={{ width: "80%", height: 500 }} preset='react' />
             </div>
         </div>
