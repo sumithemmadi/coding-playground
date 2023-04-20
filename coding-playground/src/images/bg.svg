@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2070px" height="1180px" viewBox="0 0 2070 1180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>gradient-bg-sketch-light</title>
+    <defs>
+        <linearGradient x1="-11.430849%" y1="17.2680513%" x2="103.40984%" y2="23.7541623%" id="linearGradient-1">
+            <stop stop-color="#825CFF" stop-opacity="0.384697334" offset="0%"></stop>
+            <stop stop-color="#FF8FB8" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="40.1551015%" y1="-24.2199881%" x2="40.1551015%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4B90FF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gradient-bg-sketch-light" fill-rule="nonzero">
+            <path d="M1242,0 C1203.13503,83.269079 1207.42866,328.65745 1057.49559,449.921573 C907.562523,571.185697 623.079575,366.031838 473.774237,423.903995 C324.468899,481.776153 0,899.843147 0,899.843147 L0,0 L1242,0 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M2070,0 C2070,0 1843.27844,83.942574 1597.37687,331.046492 C1351.4753,578.15041 1362.03696,885.035599 1100.66486,918.588689 C974.897641,934.733789 771,748.084236 599.535972,772.200801 C491.277161,787.427498 437.857265,838.269252 12.8224895,1048.81116 L12.8224895,1179.88158 L2070,1179.88158 L2070,0 Z" id="Path" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

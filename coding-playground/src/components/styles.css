@@ -1,0 +1,24 @@
+
+
+.button1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 5px;
+  /* transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s; */
+  background-color: rgb(64, 67, 65);
+  color: rgb(255, 255, 255);
+  border-radius: 1.375rem;
+  font-size: 16px;
+  height: 1.75rem;
+  padding: 0px 1.25rem;
+  border: 0px;
+  /* align-self: self-end; */
+  cursor: pointer;
+  flex-shrink: 0;
+  font-weight: 600;
+  outline: 0px;
+  overflow: hidden;
+}
