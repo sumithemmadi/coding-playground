@@ -4,10 +4,10 @@ Coding Playground is a online coding text editor which support 'HTML','CSS','Jav
 
 # Requirements
 
-1. Node.js => v18.16.0
-2. npm version => 9.6.5
-3. MongoDB
-4. Firebase Account
+1. `Node.js` => v18.16.0
+2. `npm`  => 9.6.5
+3. `MongoDB` => 7.0.4
+4. `Firebase` => 9.20.0
 
 # Installation
 
